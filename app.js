@@ -14,7 +14,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('KafkaCorp API is alive 🚀');
 });
-
+app.get('/25', (req, res) => {
+    res.send('KafkaCorp API is alive in 25');
+});
 // Lancer serveur
 app.listen(PORT, async () => {
     await connect();
